@@ -14,7 +14,7 @@ hooks:
     #  runas: root
     # - location: create_or_update_service.sh
     #  timeout: 300
-      runas: root
+    #  runas: root
   ApplicationStart:
     - location: start_server.sh
       timeout: 300
