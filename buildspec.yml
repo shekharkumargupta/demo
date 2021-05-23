@@ -6,7 +6,7 @@ phases:
   pre_build:
     commands:
     - echo In the pre_build phase...
-    - mvn clean
+    #- mvn clean
   build:
     commands:
     - echo Build started on `date`
@@ -19,7 +19,7 @@ artifacts:
   - target/*.jar
   - scripts/*.sh
   - appspec.yml
-  discard-paths:yes
+  discard-paths: yes
 
 cache:
   paths:
